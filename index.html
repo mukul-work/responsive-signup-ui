@@ -1,1 +1,55 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <section class="left-panel">
+            <div class="branding">
+                <h1 class="logo">Gravix <sub>&trade;</sub></h1>
+                <img src="./assets/images/Gravix.ico" alt="Gravix Logo">
+                <p class="tagline">Sign up to get exciting offers!</p>
+            </div>
+        </section>
+        <section class="right-panel">
+            <div class="form-wrapper">
+                <h2>Get Starter</h2>
+                <div class="form-grid">
+                    <div class="input-group">
+                        <input type="text" name="firstName" id="firstName">
+                        <label for="firstName">First Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="lastName" id="lastName">
+                        <label for="lastName">Last Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" id="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" pattern="[6-9]{1}[0-9]{9}" name="phone" id="phone">
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="password" id="password">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="confirmPassword" id="confirmPassword">
+                        <label for="confirmPassword">Confirm Password</label>
+                    </div>
+                </div>
+                <button type="submit">Create Account</button>
+            </div>
+            <p>
+                Already have an account?
+                <a href="#">Login</a>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
