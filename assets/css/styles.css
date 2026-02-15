@@ -18,7 +18,7 @@ body {
 }
 
 .left-panel {
-  flex: 0.6;
+  flex: 3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,12 +48,13 @@ body {
 }
 
 .right-panel {
-    flex: 1;
+    flex: 5;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #111827;
+    padding: 2rem;
 }
 
 .form-grid {
@@ -178,3 +179,68 @@ button:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-panel {
+    flex: 0.8;
+    padding: 2rem;
+  }
+  
+  .right-panel {
+    padding: 2rem
+  }
+
+  .form-wrapper {
+    padding: 2rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .branding img {
+    display: none;
+  }
+
+  .left-panel {
+    flex: none;
+    width: 100%;
+    padding: 2rem 1.5rem;
+  }
+
+  .right-panel {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .form-wrapper {
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  button {
+    padding: 0.8rem;
+  }
+}
