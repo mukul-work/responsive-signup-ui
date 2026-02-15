@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
     <main class="container">
@@ -17,33 +19,41 @@
         <section class="right-panel">
             <div class="form-wrapper">
                 <h2>Get Starter</h2>
+                <form>
                 <div class="form-grid">
                     <div class="input-group">
-                        <input type="text" name="firstName" id="firstName">
+                        <input type="text" name="firstName" id="firstName" required>
                         <label for="firstName">First Name</label>
+                        <small class="error-message">*This field is Required</small>
                     </div>
                     <div class="input-group">
-                        <input type="text" name="lastName" id="lastName">
+                        <input type="text" name="lastName" id="lastName" required>
                         <label for="lastName">Last Name</label>
+                        <small class="error-message">*This field is Required</small>
                     </div>
                     <div class="input-group">
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                         <label for="email">Email</label>
+                        <small class="error-message">*This field is Required</small>
                     </div>
                     <div class="input-group">
-                        <input type="tel" pattern="[6-9]{1}[0-9]{9}" name="phone" id="phone">
+                        <input type="tel" pattern="[6-9]{1}[0-9]{9}" name="phone" id="phone" maxlength="10" required>
                         <label for="phone">Phone Number</label>
+                        <small class="error-message">*This field is Required</small>
                     </div>
                     <div class="input-group">
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
                         <label for="password">Password</label>
+                        <small class="error-message">*This field is Required</small>
                     </div>
                     <div class="input-group">
-                        <input type="password" name="confirmPassword" id="confirmPassword">
+                        <input type="password" name="confirmPassword" id="confirmPassword" required>
                         <label for="confirmPassword">Confirm Password</label>
+                        <small class="error-message">*This field is Required</small>
                     </div>
                 </div>
                 <button type="submit">Create Account</button>
+            </form>
             </div>
             <p>
                 Already have an account?
